@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design-system - demo</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://crossing.cw.com.tw/images/favicon.ico" />
+
+  <!-- 複製換日線的 meta -->
+  <meta property="og:title" content="demo" />
+  <meta property="og:description" content="demo" />
+  <meta property="og:url" content="" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="./../assets/css/reset.css" />
+  <link rel="stylesheet" href="./../assets/css/bootstrap-grid.css" />
+  <link rel="stylesheet" href="./../assets/css/design-system.css" />
+</head>
+
+<body>
+  <header class="box-shadow-bottom">
+    <div class="container-fluid">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-auto col-md-6 d-flex align-items-center logo">
+          <div class="hamburger d-block d-md-none">
+            <img src="./../assets/images/icon-hamburger.svg" alt="" />
+          </div>
+          <a class="logo-container" href="https://crossing.cw.com.tw/" target="">
+            <img src="./../assets/images/logo-standard.svg" alt="換日線logo" />
+          </a>
+          <p class="px-2 px-md-3">設計系統</p>
+        </div>
+        <div class="col-auto col-md-6 text-align-right dropdown">
+          <div>
+            <span class="dropdown-switch">
+              <!-- 此處的p，電腦版文案為"其他子頻道設計系統"，手機版為"其他頻道"  -->
+              <p></p>
+              <img src="./../assets/images/icon-arrow.svg" alt="" />
+            </span>
+            <ul class="dropdown-container">
+              <li class="dropdown-item"><a href="">選項一</a></li>
+              <li class="dropdown-item"><a href="">選項二</a></li>
+              <li class="dropdown-item"><a href="">選項三</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="d-flex">
+      <nav>
+        <div class="close">
+          <img src="./../assets/images/icon-close.svg" alt="" />
+        </div>
+        <ul>
+          <li>
+            <span class="d-block">demo</span>
+            <ul class="d-none">
+              <li class="active">demo</li>
+              <li class="">demo</li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- 頁面內容 -->
+      <div class="mx-auto">
+        <div class="container-fluid align-items-start">
+          <div class="row">
+
+            <!-- todo::需要更新名稱 -->
+            <div class="wrapper col-12 col-lg-10">
+
+              <!-- 頁面標題 -->
+              <div class="pageHeader">
+                <h1>頁面標題</h1>
+                <p class="describes-h1">頁面說明敘述</p>
+              </div>
+              <!-- 頁面標題 end -->
+
+              <!-- section -->
+              <!-- 區塊命名:section+錨點名稱 -->
+              <section id="section-block1">
+                <!-- anchor 錨點名稱-->
+                <a id="block1"></a>
+
+                <div class="title">
+                  <!-- 區塊標題 h2 -->
+                  <h2>
+                    區塊標題
+                    <img src="./../assets/images/icon-link.svg" alt="複製連結" data-href="#block1" class="copyLink" />
+                  </h2>
+                  <p class="describes-h2">區塊敘述</p>
+                  <!-- 區塊標題 end -->
+                </div>
+
+                <div class="title">
+                  <!-- 段落標題 h3 -->
+                  <h3>段落標題</h3>
+                  <p class="describes-h3">段落敘述</p>
+                  <!-- 段落標題 end -->
+                </div>
+
+              </section>
+              <!-- section end -->
+
+              <!-- 分隔線 -->
+              <hr class="divider" />
+
+              <section id="section-block2">
+                <a id="block2"></a>
+
+                <div class="title">
+                  <!-- 區塊標題 h2 -->
+                  <h2>
+                    卡片規格<img src="./../assets/images/icon-link.svg" alt="複製連結" data-href="#block2" class="copyLink" />
+                  </h2>
+                  <!-- 區塊標題 end -->
+                </div>
+
+                <div class="title">
+                  <!-- 段落標題 h3 -->
+                  <h3>一張卡片</h3>
+                  <!-- 段落標題 end -->
+                </div>
+
+                <div class="d-flex max-width-1000 card-group--1">
+                  <div class="card">
+                    <div class="card-title">
+                      <p>卡片標題</p>
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                    </div>
+                    <div class="card-body">
+                      <!-- 圖片滿版請存至少1000px/一排個數的大小，如果不滿版就存需要的尺寸，因為有設定最大寬為圖片的100% -->
+                      <!-- <img src="./../assets/images/demo/demo1.png" alt="" /> -->
+
+                      <!-- 也可以放置video -->
+                      <video src="./../assets/images/fundamentals/value/spirit_1.mp4" muted loop autoplay></video>
+                    </div>
+                    <div class="card-content">
+                      <!-- do/dont -->
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                      <p class="do">
+                        <img src="./../assets/images/icon-ok.svg" alt="" />
+                        DO
+                      </p>
+                      <!-- 圖說 -->
+                      <p class="illustration-p pc">
+                        <strong>電腦版</strong>：卡片可以放圖片也可以放置video
+                      </p>
+                      <p class="illustration-p mb">
+                        <strong>手機版</strong>：卡片可以放圖片也可以放置video
+                      </p>
+                      <!-- download -->
+                      <ul>
+                        <li>
+                          <a href="" download="" download>下載項目</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="title">
+                  <!-- 段落標題 h3 -->
+                  <h3>兩張卡片 - 桌機兩個/手機一個</h3>
+                  <!-- 段落標題 end -->
+                </div>
+
+                <div class="d-flex max-width-1000 card-group--2">
+                  <div class="card">
+                    <div class="card-title">
+                      <p>卡片標題</p>
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                    </div>
+                    <div class="card-body">
+                      <!-- 圖片滿版請存至少1000px/一排個數的大小，如果不滿版就存需要的尺寸，因為有設定最大寬為圖片的100% -->
+                      <img src="./../assets/images/demo/demo1.png" alt="" />
+                    </div>
+                    <div class="card-content">
+                      <!-- do/dont -->
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                      <p class="do">
+                        <img src="./../assets/images/icon-ok.svg" alt="" />
+                        DO
+                      </p>
+                      <!-- 圖說 -->
+                      <p class="illustration-p">
+                        圖說圖說圖說圖說
+                      </p>
+                      <!-- download -->
+                      <ul>
+                        <li>
+                          <a href="" download="" download>下載項目</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-title">
+                      <p>卡片標題</p>
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                    </div>
+                    <div class="card-body">
+                      <!-- 圖片滿版請存至少1000px/一排個數的大小，如果不滿版就存需要的尺寸，因為有設定最大寬為圖片的100% -->
+                      <img src="./../assets/images/demo/demo1.png" alt="" />
+                    </div>
+                    <div class="card-content">
+                      <!-- do/dont -->
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                      <p class="do">
+                        <img src="./../assets/images/icon-ok.svg" alt="" />
+                        DO
+                      </p>
+                      <!-- 圖說 -->
+                      <p class="illustration-p">
+                        圖說圖說圖說圖說
+                      </p>
+                      <!-- download -->
+                      <ul>
+                        <li>
+                          <a href="" download="" download>下載項目</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- special 分隔線 放置於內文中，需加上 margin-5-->
+                <hr class="divider margin-5" />
+
+                <div class="title">
+                  <!-- 段落標題 h3 -->
+                  <h3>兩張卡片 - 桌機兩個/手機兩個</h3>
+                  <!-- 段落標題 end -->
+                </div>
+
+                <!-- special 手機版如果需要維持兩個 -->
+                <!-- 兩張卡片預設手機版要變成1個1個排列，若想要兩個兩個排列，需要加上m-special-2 -->
+                <!-- <div class="d-flex max-width-1000 card-group--2 m-special-2"> -->
+                <div class="d-flex max-width-1000 card-group--2 m-special-2">
+                  <div class="card">
+                    <div class="card-title">
+                      <p>卡片標題</p>
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                    </div>
+                    <div class="card-body">
+                      <!-- 圖片滿版請存至少1000px/一排個數的大小，如果不滿版就存需要的尺寸，因為有設定最大寬為圖片的100% -->
+                      <img src="./../assets/images/demo/demo1.png" alt="" />
+                    </div>
+                    <div class="card-content">
+                      <!-- do/dont -->
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                      <p class="do">
+                        <img src="./../assets/images/icon-ok.svg" alt="" />
+                        DO
+                      </p>
+                      <!-- 圖說 -->
+                      <p class="illustration-p">
+                        圖說圖說圖說圖說
+                      </p>
+                      <!-- download -->
+                      <ul>
+                        <li>
+                          <a href="" download="" download>下載項目</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-title">
+                      <p>卡片標題</p>
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                    </div>
+                    <div class="card-body">
+                      <!-- 圖片滿版請存至少1000px/一排個數的大小，如果不滿版就存需要的尺寸，因為有設定最大寬為圖片的100% -->
+                      <img src="./../assets/images/demo/demo1.png" alt="" />
+                    </div>
+                    <div class="card-content">
+                      <!-- do/dont -->
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                      <p class="do">
+                        <img src="./../assets/images/icon-ok.svg" alt="" />
+                        DO
+                      </p>
+                      <!-- 圖說 -->
+                      <p class="illustration-p">
+                        圖說圖說圖說圖說
+                      </p>
+                      <!-- download -->
+                      <ul>
+                        <li>
+                          <a href="" download="" download>下載項目</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-title">
+                      <p>卡片標題</p>
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                    </div>
+                    <div class="card-body">
+                      <!-- 圖片滿版請存至少1000px/一排個數的大小，如果不滿版就存需要的尺寸，因為有設定最大寬為圖片的100% -->
+                      <img src="./../assets/images/demo/demo1.png" alt="" />
+                    </div>
+                    <div class="card-content">
+                      <!-- do/dont -->
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                      <p class="do">
+                        <img src="./../assets/images/icon-ok.svg" alt="" />
+                        DO
+                      </p>
+                      <!-- 圖說 -->
+                      <p class="illustration-p">
+                        圖說圖說圖說圖說
+                      </p>
+                      <!-- download -->
+                      <ul>
+                        <li>
+                          <a href="" download="" download>下載項目</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-title">
+                      <p>卡片標題</p>
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                    </div>
+                    <div class="card-body">
+                      <!-- 圖片滿版請存至少1000px/一排個數的大小，如果不滿版就存需要的尺寸，因為有設定最大寬為圖片的100% -->
+                      <img src="./../assets/images/demo/demo1.png" alt="" />
+                    </div>
+                    <div class="card-content">
+                      <!-- do/dont -->
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                      <p class="do">
+                        <img src="./../assets/images/icon-ok.svg" alt="" />
+                        DO
+                      </p>
+                      <!-- 圖說 -->
+                      <p class="illustration-p">
+                        圖說圖說圖說圖說
+                      </p>
+                      <!-- download -->
+                      <ul>
+                        <li>
+                          <a href="" download="" download>下載項目</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="title">
+                  <!-- 段落標題 h3 -->
+                  <h3>三張卡片</h3>
+                  <!-- 段落標題 end -->
+                </div>
+
+                <div class="d-flex max-width-1000 card-group--3">
+                  <div class="card">
+                    <div class="card-title">
+                      <p>卡片標題</p>
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                    </div>
+                    <div class="card-body">
+                      <!-- 圖片滿版請存至少1000px/一排個數的大小，如果不滿版就存需要的尺寸，因為有設定最大寬為圖片的100% -->
+                      <img src="./../assets/images/demo/demo1.png" alt="" />
+                    </div>
+                    <div class="card-content">
+                      <!-- do/dont -->
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                      <p class="do">
+                        <img src="./../assets/images/icon-ok.svg" alt="" />
+                        DO
+                      </p>
+                      <!-- 圖說 -->
+                      <p class="illustration-p">
+                        圖說圖說圖說圖說
+                      </p>
+                      <!-- download -->
+                      <ul>
+                        <li>
+                          <a href="" download="" download>下載項目</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-title">
+                      <p>卡片標題</p>
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                    </div>
+                    <div class="card-body">
+                      <!-- 圖片滿版請存至少1000px/一排個數的大小，如果不滿版就存需要的尺寸，因為有設定最大寬為圖片的100% -->
+                      <img src="./../assets/images/demo/demo1.png" alt="" />
+                    </div>
+                    <div class="card-content">
+                      <!-- do/dont -->
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                      <p class="do">
+                        <img src="./../assets/images/icon-ok.svg" alt="" />
+                        DO
+                      </p>
+                      <!-- 圖說 -->
+                      <p class="illustration-p">
+                        圖說圖說圖說圖說
+                      </p>
+                      <!-- download -->
+                      <ul>
+                        <li>
+                          <a href="" download="" download>下載項目</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-title">
+                      <p>卡片標題</p>
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                    </div>
+                    <div class="card-body">
+                      <!-- 圖片滿版請存至少1000px/一排個數的大小，如果不滿版就存需要的尺寸，因為有設定最大寬為圖片的100% -->
+                      <img src="./../assets/images/demo/demo1.png" alt="" />
+                    </div>
+                    <div class="card-content">
+                      <!-- do/dont -->
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                      <p class="do">
+                        <img src="./../assets/images/icon-ok.svg" alt="" />
+                        DO
+                      </p>
+                      <!-- 圖說 -->
+                      <p class="illustration-p">
+                        圖說圖說圖說圖說圖說圖說圖說圖說圖說
+                      </p>
+                      <!-- download -->
+                      <ul>
+                        <li>
+                          <a href="" download="" download>下載項目</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="title">
+                  <h3>兩張卡片 - 左圖右字類型</h3>
+                </div>
+
+                <div class="d-flex max-width-1000 card-group--2 card-group--right-text">
+                  <div class="card">
+                    <div class="card-title">
+                      <p>卡片標題</p>
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                    </div>
+                    <div class="card-body">
+                      <!-- 圖片滿版請存至少1000px/一排個數的大小，如果不滿版就存需要的尺寸，因為有設定最大寬為圖片的100% -->
+                      <img src="./../assets/images/demo/demo1.png" alt="" />
+                    </div>
+                    <div class="card-content">
+                      <!-- do/dont -->
+                      <p class="dont">
+                        <img src="./../assets/images/icon-error.svg" alt="" />
+                        DON’T
+                      </p>
+                      <p class="do">
+                        <img src="./../assets/images/icon-ok.svg" alt="" />
+                        DO
+                      </p>
+                      <!-- 圖說 -->
+                      <p class="illustration-p">
+                        圖說圖說圖說圖說
+                      </p>
+                      <!-- download -->
+                      <ul>
+                        <li>
+                          <a href="" download="" download>下載項目</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-text">
+                      <p>文字區塊標題</p>
+                      <ul>
+                        <li>
+                          <!-- <div class="circle"></div> -->
+                          <img src="./../assets/images/demo/demo3.png" alt="" />
+                          <ul>
+                            <li>文字區塊敘述</li>
+                            <li>文字區塊敘述</li>
+                            <li>文字區塊敘述</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card-text">
+                      <p>文字區塊標題</p>
+                      <ul>
+                        <li>
+                          <img src="./../assets/images/demo/demo3.png" alt="" />
+                          <p>文字區塊敘述</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- 分隔線 -->
+              <hr class="divider" />
+
+              <section id="section-block3">
+                <!-- anchor 錨點名稱-->
+                <a id="block3"></a>
+
+                <div class="title">
+                  <!-- 區塊標題 h2 -->
+                  <h2>
+                    其他元件
+                    <img src="./../assets/images/icon-link.svg" alt="複製連結" data-href="#block3" class="copyLink" />
+                  </h2>
+                  <p class="describes-h2">其他元件</p>
+                  <!-- 區塊標題 end -->
+                </div>
+
+                <div class="title">
+                  <!-- 段落標題 h3 -->
+                  <h3>色塊表格</h3>
+                  <p class="describes-h3">色塊表格</p>
+                  <!-- 段落標題 end -->
+                </div>
+
+                <div class="d-flex max-width-1000 table">
+                  <div class="table-title">
+                    <p>表格標題</p>
+                  </div>
+                  <!-- 顏色色塊 -->
+                  <ul class="block">
+                    <li class="bg-primary">色塊表格（寬度等比）</li>
+                    <li class="bg-primary-variant">色塊表格（寬度等比）</li>
+                  </ul>
+                  <!-- 表格 -->
+                  <div class="table-con">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>表格抬頭（寬度均分）</th>
+                          <th>表格抬頭</th>
+                          <th>表格抬頭</th>
+                          <th>表格抬頭</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>
+                            <span class="square bg-primary"></span>表格標題
+                          </th>
+                          <td>內容</td>
+                          <td>內容</td>
+                          <td>內容</td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <span class="square bg-primary-variant"></span>表格標題
+                          </th>
+                          <td>內容</td>
+                          <td>內容</td>
+                          <td>內容</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table-describes">
+                    <p>備註文字</p>
+                  </div>
+                </div>
+
+                <div class="title">
+                  <!-- 段落標題 h3 -->
+                  <h3>download btn</h3>
+                  <!-- 段落標題 end -->
+                </div>
+
+                <!-- 下載樣式 -->
+                <div class="d-flex max-width-1000">
+                  <a class="button" href="" download>
+                    <p>下載區塊標題</p>
+                  </a>
+                </div>
+
+                <!-- 連結樣式 -->
+                <div class="d-flex max-width-1000">
+                  <a class="button href" href="" target="_blank">
+                    <p>下載區塊標題</p>
+                  </a>
+                </div>
+
+                <div class="title">
+                  <!-- 段落標題 h3 -->
+                  <h3>icon 區</h3>
+                  <!-- 段落標題 end -->
+                </div>
+                <div class="d-flex max-width-1000">
+                  <div class="icon">
+                    <ul>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                      <li>
+                        <img src="./../assets/images/demo/demo3.png" alt="" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <!-- 右邊選單(1000px以上才有) -->
+            <!-- 此處如果不顯示，不能刪除只能隱藏，不然會有js錯誤 -->
+            <!-- 此處如果不顯示：<aside class="d-none col-lg-2"> -->
+            <aside class="d-none d-lg-block col-lg-2">
+              <p>CONTENT</p>
+              <ul>
+                <li class="active"><a href="#block1">頁面標題</a></li>
+                <li><a href="#block2">卡片規格</a></li>
+                <li><a href="#block3">其他元件</a></li>
+              </ul>
+            </aside>
+            <!-- 右邊選單 end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="bg-black-50">
+    <div>
+      <p>
+        Copyright ©
+        <span class="copyright-year"></span> 天下數位發展中心製作<br class="d-block d-md-none" />
+        All rights reserved.
+      </p>
+      <p>版權所有，禁止擅自轉貼節錄</p>
+      <p><a href="https://member.cwg.tw/privacy-policy" target="_blank">隱私權政策</a></p>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <!-- 訊息框 -->
+  <div class="msg">
+    <p></p>
+  </div>
+  <!-- 訊息框 end -->
+
+  <!-- nav的黑屏 -->
+  <div class="black"></div>
+  <!-- nav的黑屏 end-->
+</body>
+
+<!-- 共用js -->
+<script src="./../assets/js/design-system.js"></script>
+
+</html>

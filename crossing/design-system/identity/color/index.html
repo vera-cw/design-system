@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design-system - 色彩</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://crossing.cw.com.tw/images/favicon.ico" />
+
+    <!-- 複製換日線的 meta -->
+    <meta property="og:title" content="色彩" />
+    <meta property="og:description" content="色彩" />
+    <meta property="og:url" content="" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./../../assets/css/reset.css" />
+    <link rel="stylesheet" href="./../../assets/css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="./../../assets/css/design-system.css" />
+</head>
+
+<body>
+    <header class="box-shadow-bottom">
+        <div class="container-fluid">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-auto col-md-6 d-flex align-items-center logo">
+                    <div class="hamburger d-block d-md-none">
+                        <img src="./../../assets/images/icon-hamburger.svg" alt="" />
+                    </div>
+                    <a class="logo-container" href="https://crossing.cw.com.tw/" target="">
+                        <img src="./../../assets/images/logo-standard.svg" alt="換日線logo" />
+                    </a>
+                    <p class="px-2 px-md-3">設計系統</p>
+                </div>
+                <div class="col-auto col-md-6 text-align-right dropdown">
+                    <div>
+                        <span class="dropdown-switch">
+                            <!-- 此處的p，電腦版文案為"其他子頻道設計系統"，手機版為"其他頻道"  -->
+                            <p></p>
+                            <img src="./../../assets/images/icon-arrow.svg" alt="" />
+                        </span>
+                        <ul class="dropdown-container">
+                            <li class="list-item"><a href="">微笑台灣</a></li>
+                            <li class="list-item"><a href="">CSR@天下</a></li>
+                            <li class="list-item"><a href="">未來城市</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="d-flex">
+            <nav>
+                <div class="close">
+                    <img src="./../../assets/images/icon-close.svg" alt="" />
+                </div>
+                <ul>
+                    <li class="withoutSub" data-href="./../../index.html">
+                        使用說明
+                    </li>
+                    <li><span class="d-block">品牌核心</span>
+                        <ul class="d-none">
+                            <li data-href="./../../fundamentals/value/index.html">品牌核心價值</li>
+                            <li data-href="./../../fundamentals/principle/index.html">設計原則與範例</li>
+                        </ul>
+                    </li>
+                    <li><span class="d-block active">品牌識別</span>
+                        <ul>
+                            <li data-href="./../../identity/logo/index.html">標誌</li>
+                            <li class="active">色彩</li>
+                            <li data-href="./../../identity/font/index.html">字體</li>
+                            <li data-href="./../../identity/icon/index.html">圖示</li>
+                        </ul>
+                    </li>
+                    <li><span class="d-block">品牌應用</span>
+                        <ul class="d-none">
+                            <li data-href="./../../applications/social-media/index.html">社群</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- 頁面內容 -->
+            <div class="mx-auto">
+                <div class="container-fluid align-items-start">
+                    <div class="row">
+
+                        <div class="wrapper col-12 col-lg-10">
+
+                            <!-- 頁面標題 -->
+                            <div class="pageHeader">
+                                <h1>色彩</h1>
+                                <p class="describes-h1">
+                                    視覺感應上除了型態，色彩意象也是相當重要的一環，《換日線》透過系統性的色彩規範，確保品牌形象能透過色彩的傳達給大眾清晰且明確的印象。</p>
+                            </div>
+                            <!-- 頁面標題 end -->
+
+                            <!-- section -->
+                            <section id="section-primary">
+                                <!-- anchor 錨點名稱-->
+                                <a id="primary"></a>
+
+                                <div class="title">
+                                    <!-- 區塊標題 h2 -->
+                                    <h2>品牌主色
+                                        <img src="./../../assets/images/icon-link.svg" alt="複製連結" data-href="#primary"
+                                            class="copyLink" />
+                                    </h2>
+                                    <p class="describes-h2">
+                                        象徵換日線的光芒的橘色是《換日線》的主色調，因應不同情境需求，可搭配不同層次的系列色使用。
+                                    </p>
+                                    <!-- 區塊標題 end -->
+                                </div>
+
+                                <div class="d-flex max-width-1000 table">
+                                    <!-- 顏色色塊 -->
+                                    <ul class="block">
+                                        <li class="bg-primary lessThanFive">Main</li>
+                                        <li class="bg-primary-variant lessThanFive">Dark</li>
+                                    </ul>
+                                    <!-- 表格 -->
+                                    <div class="table-con">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Title</th>
+                                                    <th>HEX</th>
+                                                    <th>RGB</th>
+                                                    <th>CMYK</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        <span class="square bg-primary"></span>Main
+                                                    </th>
+                                                    <td class="cursor-pointer copyColor">#FF9900</td>
+                                                    <td class="cursor-pointer copyColor">255, 153, 0</td>
+                                                    <td class="cursor-pointer copyColor">0, 40, 100, 0</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <span class="square bg-primary-variant"></span>Dark
+                                                    </th>
+                                                    <td class="cursor-pointer copyColor">#FF6600</td>
+                                                    <td class="cursor-pointer copyColor">255, 102, 0</td>
+                                                    <td class="cursor-pointer copyColor">0, 60, 100, 0</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="table-describes">
+                                        <p>※點選顏色複製色碼</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- section end -->
+
+                            <!-- 分隔線 -->
+                            <hr class="divider" />
+
+                            <!-- 區塊命名:section+錨點名稱 -->
+                            <section id="section-secondary">
+                                <!-- anchor 錨點名稱-->
+                                <a id="secondary"></a>
+
+                                <div class="title">
+                                    <!-- 區塊標題 h2 -->
+                                    <h2>輔助色
+                                        <img src="./../../assets/images/icon-link.svg" alt="複製連結" data-href="#secondary"
+                                            class="copyLink" />
+                                    </h2>
+                                    <p class="describes-h2">
+                                        除了亮眼的主色外，《換日線》的輔助色彩代表沈穩與探索，且更具功能性與層次感。
+                                    </p>
+                                    <!-- 區塊標題 end -->
+                                </div>
+
+                                <div class="d-flex max-width-1000 table">
+                                    <!-- 顏色色塊 -->
+                                    <ul class="block">
+                                        <li class="bg-secondary lessThanFive">Main</li>
+                                        <li class="bg-secondary-variant lessThanFive">Heavy</li>
+                                    </ul>
+                                    <!-- 表格 -->
+                                    <div class="table-con">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Title</th>
+                                                    <th>HEX</th>
+                                                    <th>RGB</th>
+                                                    <th>CMYK</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        <span class="square bg-secondary"></span>Main
+                                                    </th>
+                                                    <td class="cursor-pointer copyColor">#000000</td>
+                                                    <td class="cursor-pointer copyColor">0, 0, 0</td>
+                                                    <td class="cursor-pointer copyColor">0, 0, 0, 0</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <span class="square bg-secondary-variant"></span>Heavy
+                                                    </th>
+                                                    <td class="cursor-pointer copyColor">#00151D</td>
+                                                    <td class="cursor-pointer copyColor">0, 21, 29</td>
+                                                    <td class="cursor-pointer copyColor">100, 28, 0, 89</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="table-describes">
+                                        <p>※點選顏色複製色碼</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- section end -->
+
+                            <!-- 分隔線 -->
+                            <hr class="divider" />
+
+                            <!-- 區塊命名:section+錨點名稱 -->
+                            <section id="section-neutral">
+                                <!-- anchor 錨點名稱-->
+                                <a id="neutral"></a>
+
+                                <div class="title">
+                                    <!-- 區塊標題 h2 -->
+                                    <h2>中性色
+                                        <img src="./../../assets/images/icon-link.svg" alt="複製連結" data-href="#neutral"
+                                            class="copyLink" />
+                                    </h2>
+                                    <!-- 區塊標題 end -->
+                                </div>
+
+                                <div class="d-flex max-width-1000 table">
+                                    <!-- 顏色色塊 -->
+                                    <ul class="block">
+                                        <li class="bg-black-1000">Black</li>
+                                        <li class="bg-black-900">900</li>
+                                        <li class="bg-black-800">800</li>
+                                        <li class="bg-black-700">700</li>
+                                        <li class="bg-black-600">600</li>
+                                        <li class="bg-black-500">500</li>
+                                        <li class="bg-black-400">400</li>
+                                        <li class="bg-black-300 black-1000">300</li>
+                                        <li class="bg-black-200 black-1000">200</li>
+                                        <li class="bg-black-100 black-1000">100</li>
+                                        <li class="bg-black-50 black-1000">50</li>
+                                        <li class="bg-black-0 black-1000">White</li>
+                                    </ul>
+                                    <!-- 表格 -->
+                                    <div class="table-con">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Title</th>
+                                                    <th>HEX</th>
+                                                    <th>RGB</th>
+                                                    <th>CMYK</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        <span class="square bg-black-1000"></span>Black
+                                                    </th>
+                                                    <td class="cursor-pointer copyColor">#000000</td>
+                                                    <td class="cursor-pointer copyColor">0, 0, 0</td>
+                                                    <td class="cursor-pointer copyColor">0, 0, 0, 100</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <span class="square bg-black-900"></span>900
+                                                    </th>
+                                                    <td class="cursor-pointer copyColor">#222222</td>
+                                                    <td class="cursor-pointer copyColor">34, 34, 34</td>
+                                                    <td class="cursor-pointer copyColor">0, 0, 0, 87</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <span class="square bg-black-800"></span>800
+                                                    </th>
+                                                    <td class="cursor-pointer copyColor">#333333</td>
+                                                    <td class="cursor-pointer copyColor">51, 51, 51</td>
+                                                    <td class="cursor-pointer copyColor">0, 0, 0, 80</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <span class="square bg-black-700"></span>700
+                                                    </th>
+                                                    <td class="cursor-pointer copyColor">#4F4F4F</td>
+                                                    <td class="cursor-pointer copyColor">79, 79, 79</td>
+                                                    <td class="cursor-pointer copyColor">0, 0, 0, 69</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <span class="square bg-black-600"></span>600
+                                                    </th>
+                                                    <td class="cursor-pointer copyColor">#707070</td>
+                                                    <td class="cursor-pointer copyColor">112, 112, 112</td>
+                                                    <td class="cursor-pointer copyColor">0, 0, 0, 56</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <span class="square bg-black-500"></span>500
+                                                    </th>
+                                                    <td class="cursor-pointer copyColor">#898989</td>
+                                                    <td class="cursor-pointer copyColor">137, 137, 137</td>
+                                                    <td class="cursor-pointer copyColor">0, 0, 0, 46</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <span class="square bg-black-400"></span>400
+                                                    </th>
+                                                    <td class="cursor-pointer copyColor">#AAAAAA</td>
+                                                    <td class="cursor-pointer copyColor">170, 170, 170</td>
+                                                    <td class="cursor-pointer copyColor">0, 0, 0, 33</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <span class="square bg-black-300"></span>300
+                                                    </th>
+                                                    <td class="cursor-pointer copyColor">#CFCFCF</td>
+                                                    <td class="cursor-pointer copyColor">207, 207, 207</td>
+                                                    <td class="cursor-pointer copyColor">0, 0, 0, 19</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <span class="square bg-black-200"></span>200
+                                                    </th>
+                                                    <td class="cursor-pointer copyColor">#E1E1E1</td>
+                                                    <td class="cursor-pointer copyColor">225, 225, 225</td>
+                                                    <td class="cursor-pointer copyColor">0, 0, 0, 12</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <span class="square bg-black-100"></span>100
+                                                    </th>
+                                                    <td class="cursor-pointer copyColor">#EEEEEE</td>
+                                                    <td class="cursor-pointer copyColor">238, 238, 238</td>
+                                                    <td class="cursor-pointer copyColor">0, 0, 0, 7</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <span class="square bg-black-50"></span>50
+                                                    </th>
+                                                    <td class="cursor-pointer copyColor">#F7F7F7</td>
+                                                    <td class="cursor-pointer copyColor">247, 247, 247</td>
+                                                    <td class="cursor-pointer copyColor">0, 0, 0, 3</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <span class="square bg-black-0 border-black-100"></span>White
+                                                    </th>
+                                                    <td class="cursor-pointer copyColor">#FFFFFF</td>
+                                                    <td class="cursor-pointer copyColor">255, 255, 255</td>
+                                                    <td class="cursor-pointer copyColor">0, 0, 0, 0</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="table-describes">
+                                        <p>※點選顏色複製色碼</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- section end -->
+
+                            <!-- 分隔線 -->
+                            <hr class="divider" />
+
+                        </div>
+
+                        <!-- 右邊選單(1000px以上才有) -->
+                        <aside class="d-none d-lg-block col-lg-2">
+                            <p>CONTENT</p>
+                            <ul>
+                                <li class="active"><a href="#primary">品牌主色</a></li>
+                                <li><a href="#secondary">輔助色</a></li>
+                                <li><a href="#neutral">中性色</a></li>
+                            </ul>
+                        </aside>
+                        <!-- 右邊選單 end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-black-50">
+        <div>
+            <p>
+                Copyright ©
+                <span class="copyright-year"></span> 天下數位發展中心製作<br class="d-block d-md-none" />
+                All rights reserved.
+            </p>
+            <p>版權所有，禁止擅自轉貼節錄</p>
+            <p><a href="https://member.cwg.tw/privacy-policy" target="_blank">隱私權政策</a></p>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- message 訊息框 -->
+    <div class="msg">
+        <p></p>
+    </div>
+    <!-- 訊息框 end -->
+
+    <!-- nav的黑屏 -->
+    <div class="black"></div>
+    <!-- nav的黑屏 end-->
+</body>
+
+<!-- 共用js -->
+<script src="./../../assets/js/design-system.js"></script>
+
+</html>

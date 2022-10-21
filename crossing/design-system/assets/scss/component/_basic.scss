@@ -1,0 +1,819 @@
+// ----------------------------
+// 自定義共用css樣式
+// ----------------------------
+
+* {
+  box-sizing: border-box;
+  // outline: 1px solid #f00;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: $color-black0;
+}
+
+.pc {
+  display: none;
+  @include screen-md() {
+    display: block;
+  }
+}
+.mb {
+  display: block;
+  @include screen-md() {
+    display: none;
+  }
+}
+
+.pc-flex {
+  display: none;
+  @include screen-md() {
+    display: flex;
+  }
+}
+.mb-flex {
+  display: flex;
+  @include screen-md() {
+    display: none;
+  }
+}
+
+// ::todo 整理字體大小
+
+%p-small {
+  font-size: 14px;
+  line-height: 23.8px;
+  letter-spacing: 0.02rem;
+  @include screen-md() {
+    font-size: 14px;
+    line-height: 23.8px;
+    letter-spacing: 0.02rem;
+  }
+}
+
+%p-normal {
+  font-size: 16px;
+  line-height: 25.6px;
+  letter-spacing: 0.02rem;
+
+  @include screen-md() {
+    font-size: 16px;
+    line-height: 25.6px;
+    letter-spacing: 0.02rem;
+  }
+}
+
+%p-title {
+  font-size: 16px;
+  line-height: 25.6px;
+  letter-spacing: 0.02rem;
+
+  @include screen-md() {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.02rem;
+  }
+}
+
+%p-footer {
+  font-size: 12px;
+  line-height: 20.4px;
+  @include screen-md() {
+    font-size: 14px;
+    line-height: 23.8px;
+  }
+}
+
+main {
+  overflow-x: hidden;
+  @include screen-md() {
+    overflow-x: initial;
+  }
+}
+
+.wrapper {
+  position: relative;
+  padding: 0 24px 7rem;
+  @include screen-md() {
+    margin-left: 0px;
+    padding: 0 64px 10rem;
+    &::before {
+      content: '';
+      width: 1px;
+      height: 100%;
+      background-color: $color-black100;
+      position: absolute;
+      left: 0px;
+      top: 0;
+      z-index: 0;
+    }
+  }
+  .pageHeader {
+    padding: 40px 0;
+    border-bottom: 1px solid $color-black100;
+  }
+
+  .describes {
+    &-h1 {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: $color-black500;
+      font-weight: $font-weight-400;
+      letter-spacing: 0.02rem;
+      a {
+        color: $color-black500;
+        border-bottom: 1px solid $color-black500;
+        transition: 0.3s;
+        &:hover {
+          color: $primary-main;
+          border-bottom: 1px solid $primary-main;
+        }
+      }
+    }
+
+    &-h1 {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: $color-black500;
+      font-weight: $font-weight-400;
+      letter-spacing: 0.02rem;
+      margin: $spacing-1 0;
+      a {
+        color: $color-black500;
+        border-bottom: 1px solid $color-black500;
+        transition: 0.3s;
+        &:hover {
+          color: $primary-main;
+          border-bottom: 1px solid $primary-main;
+        }
+      }
+    }
+
+    &-h2 {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: $color-black1000;
+      font-weight: $font-weight-400;
+      letter-spacing: 0.02rem;
+      margin: $spacing-1 0;
+      a {
+        color: $color-black1000;
+        border-bottom: 1px solid $color-black1000;
+        transition: 0.3s;
+        &:hover {
+          color: $primary-main;
+          border-bottom: 1px solid $primary-main;
+        }
+      }
+    }
+
+    &-h3 {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: $color-black1000;
+      font-weight: $font-weight-400;
+      letter-spacing: 0.02rem;
+      margin: $spacing-1 0;
+      a {
+        color: $color-black1000;
+        border-bottom: 1px solid $color-black1000;
+        transition: 0.3s;
+        &:hover {
+          color: $primary-main;
+          border-bottom: 1px solid $primary-main;
+        }
+      }
+    }
+  }
+
+  section {
+    padding: 40px 0;
+    position: relative;
+
+    > a {
+      position: absolute;
+      top: -75px;
+      left: 0;
+    }
+
+    div {
+      flex-wrap: wrap;
+    }
+
+    > div {
+      max-width: calc(100vw - 48px);
+      @include screen-md() {
+        max-width: initial;
+      }
+      &:last-child() {
+        margin-bottom: 0;
+        @include screen-md() {
+          margin-bottom: 0;
+        }
+        > :last-child() {
+          margin-bottom: 0;
+          @include screen-md() {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    img {
+      max-width: 100%;
+      vertical-align: middle;
+    }
+
+    .title {
+      margin-bottom: $spacing-5;
+      h2 {
+        display: flex;
+        align-items: center;
+        img {
+          opacity: 1;
+          transition: 0.3s;
+          margin-left: 19.6px;
+          margin-top: 6px;
+          width: 16.8px;
+          height: 16.8px;
+          cursor: pointer;
+          @include screen-md() {
+            opacity: 0;
+            margin-top: 6px;
+          }
+        }
+        &:hover {
+          img {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+::selection {
+  // by子頻
+  color: $color-black0;
+  background-color: $secondary-main;
+}
+
+a {
+  color: $color-black1000;
+  transition: 0.3s;
+  text-decoration: none;
+
+  &:hover {
+    // by子頻
+    color: $secondary-main;
+  }
+}
+
+.text-align {
+  &-left {
+    text-align: left;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+}
+
+.box-shadow {
+  &-bottom {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+  }
+}
+
+/*  ===== 分隔線 ===== */
+.divider {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: $color-black300;
+  margin: 4px 0;
+  border: none;
+}
+
+.cursor {
+  &-not-allowed {
+    cursor: not-allowed;
+  }
+  &-pointer {
+    cursor: pointer;
+  }
+}
+
+.max-width {
+  &-1000 {
+    max-width: calc(100vw - 16px);
+    @include screen-sm() {
+      max-width: 1000px;
+    }
+  }
+}
+
+// ----------------------------
+// 自定義卡片樣式
+// ----------------------------
+.card {
+  // 卡片本身樣式
+  position: relative;
+  margin-bottom: $spacing-4;
+  @include screen-md() {
+    margin-bottom: 0px;
+  }
+  // 標題
+  &-title {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    font-weight: 500;
+
+    p {
+      @extend %p-title;
+      display: inline-flex;
+      align-items: center;
+      margin-right: 8px;
+
+      // do/dont
+      &.dont,
+      &.do {
+        display: inline-flex;
+        align-items: center;
+        font-weight: 400;
+        img {
+          width: 18px;
+          height: 18px;
+          margin-right: 8px;
+        }
+      }
+      &.do {
+        color: $do;
+      }
+      &.dont {
+        color: $dont;
+      }
+    }
+  }
+
+  // 圖片
+  &-body {
+    margin-bottom: 8px;
+    // ＊＊＊ 特殊情況：圖片超過一屏，需要讓他多包一層div
+    > div {
+      padding-left: 24px;
+      max-width: calc(100vw + 48px) !important;
+      width: calc(100vw + 0px);
+      overflow: hidden;
+      overflow: auto;
+      margin-left: -24px;
+      position: relative;
+      @include screen-sm() {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    > video {
+      padding-left: 24px;
+      max-width: calc(100vw + 48px) !important;
+      width: calc(100vw - 24px);
+      overflow: hidden;
+      overflow: auto;
+      margin-left: -24px;
+      position: relative;
+      @include screen-sm() {
+        max-width: 100%;
+        width: 100%;
+        padding-left: 0px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  // 圖說
+  &-content {
+    // do/dont
+    // do/dont
+    .dont,
+    .do {
+      display: inline-flex;
+      align-items: center;
+      font-size: $font-size-12;
+      line-height: 12px;
+      display: inline-flex;
+      align-items: center;
+      margin-right: 8px;
+      img {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+      }
+    }
+
+    .do {
+      color: $do;
+    }
+
+    .dont {
+      color: $dont;
+    }
+
+    //圖說
+    .illustration-p {
+      font-size: $font-size-16;
+      line-height: 25.6px;
+      align-items: center;
+      margin: 8px 0px;
+      padding-left: 12px;
+      border-left: 3px solid #cfcfcf;
+      letter-spacing: 0.02rem;
+      strong {
+        color: #d60c18;
+        font-weight: 400;
+      }
+      // *** special ***
+      // 圖片手機版超過100vw，此時的圖說需要設定m-special-1
+      //<div class="card-content m-special-1">
+      &.m-special-1 {
+        margin-left: -16px;
+        padding: 0 24px 0 16px;
+        @include screen-sm() {
+          margin-left: -0px;
+          padding: 0;
+        }
+      }
+    }
+
+    // download
+    ul {
+      a {
+        font-size: $font-size-14;
+        transition: 0.3s;
+        &:hover {
+          color: $primary-main;
+        }
+      }
+      li {
+        margin-top: 8px;
+        position: relative;
+        font-size: $font-size-14;
+        line-height: 1.5;
+        color: $color-black1000;
+        font-weight: $font-weight-400;
+        letter-spacing: 0.02rem;
+        padding-left: 25px;
+        &::after {
+          content: url(./../images/icon-download.svg);
+          position: absolute;
+          left: 0px;
+          top: calc(50% + 2px);
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+
+  &-text {
+    > p {
+      @extend %p-title;
+      margin-bottom: 0px;
+      font-weight: 700;
+    }
+
+    > ul {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+      > li {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: $spacing-1 0;
+        @extend %p-normal;
+
+        > img {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+
+  // 卡片外圍
+  &-group {
+    &--right-text {
+      align-items: center;
+      @include screen-md() {
+        .card:nth-child(2) {
+          padding: 40px 16px;
+        }
+      }
+      .circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 16px;
+      }
+    }
+
+    &--1 {
+      margin-bottom: $spacing-5;
+      @include screen-md() {
+        margin-bottom: $spacing-5;
+      }
+      > .card {
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+
+    &--2 {
+      margin: 0;
+      max-width: calc(100vw - 16px) !important;
+      @include screen-md() {
+        max-width: unset;
+        margin: 0 -16px;
+        margin-bottom: $spacing-5;
+      }
+      > .card {
+        width: 100%;
+        padding: 0;
+        @include screen-md() {
+          padding: 0 16px;
+          width: 50%;
+        }
+      }
+      // 手機版的最後一個margin-bottom設定為40px，其餘的為32px
+      .card:last-child {
+        margin-bottom: 40px;
+        @include screen-md() {
+          margin-bottom: 0px;
+        }
+      }
+      // *** special ***
+      // 圖片手機版超過100vw，此時的圖說需要設定m-special-1
+      // <div class="d-flex max-width-1000 card-group--2 m-special-2">
+      &.m-special-2 {
+        margin: 0 -16px;
+        @include screen-md() {
+          margin-bottom: $spacing-5;
+        }
+        > div {
+          width: 50%;
+          padding: 0 16px;
+        }
+      }
+    }
+
+    &--3 {
+      margin: 0 -16px;
+      max-width: calc(100vw - 16px) !important;
+      @include screen-md() {
+        max-width: unset;
+        margin: 0 -16px;
+        margin-bottom: $spacing-5;
+      }
+      > .card {
+        width: 50%;
+        padding: 0 16px;
+        @include screen-md() {
+          padding: 0 16px;
+          width: 33.333333%;
+        }
+      }
+      // 手機版的最後一個margin-bottom設定為40px，其餘的為32px
+      .card:last-child {
+        margin-bottom: 40px;
+        @include screen-md() {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+
+// ----------------------------
+// 自定義表格樣式
+// ----------------------------
+.table {
+  margin-bottom: $spacing-5;
+  .block {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    @include screen-md() {
+      flex-wrap: nowrap;
+    }
+
+    li {
+      font-family: $font-family-sans;
+      display: inline-flex;
+      font-weight: 300;
+      width: 100%;
+      letter-spacing: 0.02rem;
+      line-height: 25.6px;
+      font-size: 16px;
+      flex-grow: 1;
+      flex-shrink: 1;
+      padding: 16px 0 16px 0px;
+      justify-content: space-around;
+      // *** 如果數量多於五個，須在li上面加上此class ***
+      &.lessThanFive {
+        padding: 16px 24px;
+        justify-content: flex-start;
+      }
+    }
+  }
+  &-title {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    font-weight: 500;
+    p {
+      @extend %p-title;
+      display: inline-flex;
+      align-items: center;
+      margin-right: 8px;
+    }
+  }
+
+  &-con {
+    width: 100%;
+    display: grid;
+    overflow-x: auto;
+    width: 100vw;
+    min-width: 100vw;
+    margin-left: -24px;
+    padding-left: 24px;
+    @include screen-md() {
+      min-width: initial;
+      width: initial;
+      margin-left: 0;
+      padding-left: 0;
+    }
+    table {
+      min-width: 100%;
+      width: 100%;
+      margin-bottom: 8px;
+      @include screen-md() {
+        table-layout: fixed;
+      }
+      th,
+      td {
+        padding: 16px 16px;
+        font-family: $font-family-sans;
+        border-bottom: 1px solid #e1e1e1;
+        min-width: 150px;
+        line-height: 25.6px;
+        font-size: 16px;
+        letter-spacing: 0.02rem;
+        @include screen-md() {
+          min-width: unset;
+        }
+      }
+      thead {
+        th + th {
+          border-left: 1px solid #e1e1e1;
+        }
+        th {
+          font-size: 14px;
+          color: #4f4f4f;
+          line-height: 23.8px;
+        }
+      }
+
+      tbody {
+        td {
+          border-left: 1px solid #e1e1e1;
+        }
+        th {
+          display: inline-flex;
+          vertical-align: middle;
+          font-weight: 700;
+          width: 100%;
+          .square {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            display: inline-flex;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+
+  &-describes {
+    font-size: 14px;
+    line-height: 23.5px;
+    letter-spacing: 0.02rem;
+    width: 100%;
+    p {
+      text-align: right;
+    }
+  }
+}
+
+// ----------------------------
+// 自定義下載樣式
+// ----------------------------
+.button {
+  padding: 16px 40px;
+  background: $color-black50;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: $spacing-5;
+  &:hover {
+    p {
+      color: $primary-main;
+    }
+  }
+  &.href {
+    p {
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        width: calc(100% - 30px);
+        height: 1px;
+        transition: 0.3s;
+        background-color: $color-black1000;
+      }
+    }
+    &:hover {
+      p {
+        &::after {
+          background-color: $primary-main;
+        }
+      }
+    }
+  }
+  p {
+    position: relative;
+    font-size: $font-size-16;
+    line-height: 1.5;
+    color: $color-black1000;
+    font-weight: $font-weight-400;
+    letter-spacing: 0.02rem;
+    padding-left: 30px;
+    transition: 0.3s;
+    display: inline-block;
+    &::before {
+      content: url(./../images/icon-download-orange.svg);
+      position: absolute;
+      left: 0px;
+      top: calc(50% + 2px);
+      transform: translateY(-50%);
+    }
+  }
+}
+
+// ----------------------------
+// 自定義icon樣式
+// ----------------------------
+.icon {
+  margin-bottom: $spacing-5;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px;
+    justify-content: start;
+    @include screen-sm() {
+      margin: 0 -8px;
+    }
+    @include screen-xl() {
+      margin: 0 -16px;
+    }
+    li {
+      margin: 8px 8px;
+      width: calc(16.333333333333% - 16px);
+      @include screen-sm() {
+        margin: 8px 8px;
+        width: calc(12.5% - 16px);
+      }
+      @include screen-xl() {
+        margin: 8px 16px;
+        width: calc(8.333333333333% - 32px);
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        max-width: 48px;
+        max-height: 48px;
+      }
+    }
+  }
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design-system - 使用說明</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://crossing.cw.com.tw/images/favicon.ico" />
+
+  <!-- 複製換日線的 meta -->
+  <meta property="og:title" content="使用說明" />
+  <meta property="og:description" content="使用說明" />
+  <meta property="og:url" content="" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/bootstrap-grid.css" />
+  <link rel="stylesheet" href="./assets/css/design-system.css" />
+</head>
+
+<body>
+  <header class="box-shadow-bottom">
+    <div class="container-fluid">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-auto col-md-6 d-flex align-items-center logo">
+          <div class="hamburger d-block d-md-none">
+            <img src="./assets/images/icon-hamburger.svg" alt="" />
+          </div>
+          <a class="logo-container" href="https://crossing.cw.com.tw/" target="">
+            <img src="./assets/images/logo-standard.svg" alt="換日線logo" />
+          </a>
+          <p class="px-2 px-md-3">設計系統</p>
+        </div>
+        <div class="col-auto col-md-6 text-align-right dropdown">
+          <div>
+            <span class="dropdown-switch">
+              <!-- 此處的p，電腦版文案為"其他子頻道設計系統"，手機版為"其他頻道"  -->
+              <p></p>
+              <img src="./assets/images/icon-arrow.svg" alt="" />
+            </span>
+            <ul class="dropdown-container">
+              <li class="dropdown-item"><a href="">選項一</a></li>
+              <li class="dropdown-item"><a href="">選項二</a></li>
+              <li class="dropdown-item"><a href="">選項三</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="d-flex">
+      <nav>
+        <div class="close">
+          <img src="./assets/images/icon-close.svg" alt="" />
+        </div>
+        <ul>
+          <li class="withoutSub active">
+            使用說明
+          </li>
+          <li><span class="d-block">品牌核心</span>
+            <ul class="d-none">
+              <li data-href="./fundamentals/value/index.html">品牌核心價值</li>
+              <li ata-href="./fundamentals/principle/index.html">設計原則與範例</li>
+            </ul>
+          </li>
+          <li><span class="d-block">品牌識別</span>
+            <ul class="d-none">
+              <li data-href="./identity/logo/index.html">標誌</li>
+              <li data-href="./identity/color/index.html">色彩</li>
+              <li data-href="./identity/font/index.html">字體</li>
+              <li data-href="./identity/icon/index.html">圖示</li>
+            </ul>
+          </li>
+          <li><span class="d-block">品牌應用</span>
+            <ul class="d-none">
+              <li data-href="./applications/social-media/index.html">社群</li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- 頁面內容 -->
+      <div class="mx-auto">
+        <div class="container-fluid align-items-start">
+          <div class="row">
+
+            <!-- todo::需要更新名稱 -->
+            <div class="wrapper col-12 col-lg-10">
+
+              <!-- 頁面標題 -->
+              <div class="pageHeader">
+                <h1>使用說明</h1>
+                <p class="describes-h1">
+                  隨著數位趨勢對產品體驗有了更進一步的要求，《換日線》以提供更好的體驗為目標，經過不斷地討論與設計迭代，衍伸出這份設計系統，通過《換日線》的品牌核心價值去規範與設計系列的定義，讓品牌在設計上有更一致性的共通語言。
+                </p>
+              </div>
+              <!-- 頁面標題 end -->
+
+              <!-- section -->
+              <section id="section-howToUse">
+                <!-- anchor 錨點名稱-->
+                <a id="howToUse"></a>
+
+                <div class="title">
+                  <!-- 區塊標題 h2 -->
+                  <h2>如何使用
+                    <img src="./assets/images/icon-link.svg" alt="複製連結" data-href="#howToUse" class="copyLink" />
+                  </h2>
+                  <p class="describes-h2">
+                    透過這份設計系統可以了解到，如何保持《換日線》的品牌識別一致性，如何清楚且明確的傳達《換日線》品牌核心訊息，並經由規範同時考量使用上的易用性，減少不必要流程與成本，讓人力可以專注於更好的產品體驗上。
+                  </p>
+                  <!-- 區塊標題 end -->
+                </div>
+              </section>
+              <!-- section end -->
+
+              <!-- 分隔線 -->
+              <hr class="divider" />
+
+              <!-- 區塊命名:section+錨點名稱 -->
+              <section id="section-contact">
+                <!-- anchor 錨點名稱-->
+                <a id="contact"></a>
+
+                <div class="title">
+                  <!-- 區塊標題 h2 -->
+                  <h2>聯絡我們
+                    <img src="./assets/images/icon-link.svg" alt="複製連結" data-href="#contact" class="copyLink" />
+                  </h2>
+                  <p class="describes-h2">使用《換日線》的標誌做任何形式的宣傳或曝光皆應經由官方許可，若您有個人/商業使用上的需求請先與我們聯繫。<br>
+                    另外，我們也秉持著因應當代潮流與產品迭代不斷更新這份設計系統，如果有任何建議或回饋，歡迎與我們聯絡。</p>
+                  <!-- 區塊標題 end -->
+                </div>
+              </section>
+              <!-- section end -->
+
+              <!-- 分隔線 -->
+              <hr class="divider" />
+            </div>
+
+            <!-- 右邊選單(1000px以上才有) -->
+            <aside class="d-none d-lg-block col-lg-2">
+              <p>CONTENT</p>
+              <ul>
+                <li class="active"><a href="#howToUse">如何使用</a></li>
+                <li><a href="#contact">聯絡我們</a></li>
+              </ul>
+            </aside>
+            <!-- 右邊選單 end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="bg-black-50">
+    <div>
+      <p>
+        Copyright ©
+        <span class="copyright-year"></span> 天下數位發展中心製作<br class="d-block d-md-none" />
+        All rights reserved.
+      </p>
+      <p>版權所有，禁止擅自轉貼節錄</p>
+      <p><a href="https://member.cwg.tw/privacy-policy" target="_blank">隱私權政策</a></p>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <!-- 訊息框 -->
+  <div class="msg">
+    <p></p>
+  </div>
+  <!-- 訊息框 end -->
+
+  <!-- nav的黑屏 -->
+  <div class="black"></div>
+  <!-- nav的黑屏 end-->
+</body>
+
+<!-- 共用js -->
+<script src="./assets/js/design-system.js"></script>
+
+</html>

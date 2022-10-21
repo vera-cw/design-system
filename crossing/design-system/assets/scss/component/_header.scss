@@ -1,0 +1,108 @@
+header {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: $color-black0;
+  padding: 12px 16px;
+  @include screen-sm() {
+    padding: 16px 48px;
+  }
+  .logo {
+    padding: 0;
+    p {
+      white-space: nowrap;
+      @extend %p-small;
+      color: $color-black800;
+    }
+    &-container {
+      width: 120px;
+      min-width: 100px;
+      display: block;
+      @include screen-sm() {
+        min-width: 120px;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .hamburger {
+    padding: 10px 12px;
+  }
+  .dropdown {
+    background-color: $color-black0;
+    cursor: pointer;
+    padding: 0;
+    > div {
+      display: inline-block;
+      position: relative;
+      min-width: 100px;
+      @include screen-sm() {
+        min-width: 120px;
+      }
+    }
+    img {
+      transition: 0.3s;
+      margin-left: 5px;
+    }
+    ul {
+      border: 1px solid $color-black300;
+    }
+    li {
+      background-color: $color-black0;
+    }
+    li + li {
+      border-top: 1px solid $color-black100;
+    }
+    a {
+      display: block;
+      padding: 8px 16px;
+      @extend %p-small;
+      font-weight: 400;
+      transition: 0.3s;
+      &:hover {
+        color: $primary-main;
+      }
+    }
+    span {
+      white-space: nowrap;
+      font-weight: 400;
+      @extend %p-small;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 10px;
+      color: $color-black700;
+      &.active {
+        img {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    &-container {
+      position: absolute;
+      text-align: left;
+      transition: 0.3s ease-in-out opacity;
+      top: -200px;
+      z-index: -60;
+      width: 120px;
+      left: -20px;
+      opacity: 0;
+      @include screen-sm() {
+        width: 100%;
+        left: 0px;
+      }
+      &.active {
+        top: 40px;
+        z-index: 1;
+        left: -20px;
+        opacity: 1;
+        @include screen-sm() {
+          z-index: 1;
+          left: 0px;
+        }
+      }
+    }
+  }
+}

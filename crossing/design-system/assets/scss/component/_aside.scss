@@ -1,0 +1,43 @@
+aside {
+    position: sticky;
+    top: 85px;
+    left: 0;
+    height: 100%;
+    padding: 0 10px;
+    p{
+      //content英文
+      font-size: 12px;
+      color: $color-black300;
+      line-height: 20.4px;
+      letter-spacing: 1px;
+      margin: 4px 10px;
+    }
+    ul{
+      border-left: 2px solid $color-black100;
+    }
+    li{
+      transition: 0.3s;
+      position: relative;
+      word-break: keep-all;
+      &.active::before{
+        content: '';
+        width: 2px;
+        height: 100%;
+        // by子頻
+        background-color: $primary-main;
+        position: absolute;
+        left: -2px;
+        top: 0;
+      }
+    }
+    a{
+      @extend %p-small;
+      padding-left: 10px;
+      color: $color-black1000;
+      &:hover{
+        color: $primary-main;
+      }
+    }
+}
+  
+  

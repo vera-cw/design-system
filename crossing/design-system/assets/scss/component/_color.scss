@@ -1,0 +1,168 @@
+$color-black0: #fff;
+$color-black50: #f7f7f7;
+$color-black100: #eeeeee;
+$color-black200: #e1e1e1;
+$color-black300: #cfcfcf;
+$color-black400: #aaaaaa;
+$color-black500: #898989;
+$color-black600: #707070;
+$color-black700: #4f4f4f;
+$color-black800: #333333;
+$color-black900: #222222;
+$color-black1000: #000000;
+
+// by頻道
+$primary-main: #ff9902;
+$primary-variant: #ff6600;
+$secondary-main: #000000;
+$secondary-variant: #00151d;
+$dont: #d60c18;
+$do: #3a9aaf;
+
+.black {
+  &-0 {
+    color: $color-black0;
+  }
+  &-50 {
+    color: $color-black50;
+  }
+  &-100 {
+    color: $color-black100;
+  }
+  &-200 {
+    color: $color-black200;
+  }
+  &-300 {
+    color: $color-black300;
+  }
+  &-400 {
+    color: $color-black400;
+  }
+  &-500 {
+    color: $color-black500;
+  }
+  &-600 {
+    color: $color-black600;
+  }
+  &-700 {
+    color: $color-black700;
+  }
+  &-800 {
+    color: $color-black800;
+  }
+  &-900 {
+    color: $color-black900;
+  }
+  &-1000 {
+    color: $color-black1000;
+  }
+}
+
+.bg-black {
+  &-0 {
+    background-color: $color-black0;
+  }
+  &-50 {
+    background-color: $color-black50;
+  }
+  &-100 {
+    background-color: $color-black100;
+  }
+  &-200 {
+    background-color: $color-black200;
+  }
+  &-300 {
+    background-color: $color-black300;
+  }
+  &-400 {
+    background-color: $color-black400;
+  }
+  &-500 {
+    background-color: $color-black500;
+  }
+  &-600 {
+    background-color: $color-black600;
+  }
+  &-700 {
+    background-color: $color-black700;
+  }
+  &-800 {
+    background-color: $color-black800;
+  }
+  &-900 {
+    background-color: $color-black900;
+  }
+  &-1000 {
+    background-color: $color-black1000;
+  }
+}
+
+.border-black {
+  &-0 {
+    border: 1px solid $color-black0;
+  }
+  &-50 {
+    border: 1px solid $color-black50;
+  }
+  &-100 {
+    border: 1px solid $color-black100;
+  }
+  &-200 {
+    border: 1px solid $color-black200;
+  }
+  &-300 {
+    border: 1px solid $color-black300;
+  }
+  &-400 {
+    border: 1px solid $color-black400;
+  }
+  &-500 {
+    border: 1px solid $color-black500;
+  }
+  &-600 {
+    border: 1px solid $color-black600;
+  }
+  &-700 {
+    border: 1px solid $color-black700;
+  }
+  &-800 {
+    border: 1px solid $color-black800;
+  }
+  &-900 {
+    border: 1px solid $color-black900;
+  }
+  &-1000 {
+    border: 1px solid $color-black1000;
+  }
+}
+
+// element
+.primary {
+  &-primary {
+    color: $primary-main;
+  }
+  &-primary-variant {
+    color: $primary-variant;
+  }
+  &-secondary {
+    color: $secondary-main;
+  }
+  &-secondary-variant {
+    color: $secondary-variant;
+  }
+}
+
+.bg {
+  &-primary {
+    background-color: $primary-main;
+  }
+  &-primary-variant {
+    background-color: $primary-variant;
+  }
+  &-secondary {
+    background-color: $secondary-main;
+  }
+  &-secondary-variant {
+    background-color: $secondary-variant;
+  }
+}

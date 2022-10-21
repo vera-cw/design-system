@@ -1,0 +1,35 @@
+footer {
+    margin-left: auto;
+    position: relative;
+    width: calc(100%);
+    background-color: $color-black50;
+    @include screen-md() {
+      width: calc(100% - 281px);
+    }
+    >div{
+      padding: $spacing-3 $spacing-6;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: -1px;
+      height: 100%;
+      width: 0px;
+      background-color: $color-black100;
+      @include screen-md() {
+        width: 1px;
+      }
+    }
+    p {
+      @extend %p-footer;
+    }
+    a {
+      color: $color-black1000;
+      border-bottom: 1px solid $color-black1000;
+      transition: 0.3s;
+      &:hover{
+        border-bottom: 1px solid $primary-main;
+        color: $primary-main;
+      }
+    }
+  }

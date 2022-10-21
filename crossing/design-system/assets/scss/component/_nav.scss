@@ -1,0 +1,136 @@
+nav {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  top: 0;
+  left: -100%;
+  height: calc(100vh + 10rem);
+  transition: 0.5s ease-in-out;
+  position: fixed;
+  background: #fff;
+  z-index: 2;
+  border-right: 1px solid $color-black100;
+  @include screen-md() {
+    border-right: 0px solid $color-black100;
+    position: sticky;
+    display: block;
+    top: 75px;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+  }
+  .close {
+    position: absolute;
+    right: -33px;
+    top: 20px;
+    display: flex;
+    background: #fff;
+    font-weight: 300;
+    padding-left: 8px;
+    @include screen-md() {
+      display: none;
+    }
+  }
+  > ul {
+    width: 280px;
+    > li {
+      @extend %p-small;
+      font-weight: 400;
+      position: relative;
+      cursor: pointer;
+      color: $color-black500;
+      > span {
+        padding: 16px 48px;
+        position: relative;
+        &::after {
+          content: url(./../images/icon-arrow.svg);
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          transition: 0.3s;
+        }
+        &.active {
+          &::after {
+            transform: translateY(-50%) rotate(180deg);
+          }
+        }
+      }
+      > ul {
+        background-color: $color-black50;
+        color: $color-black1000;
+        > li {
+          @extend %p-normal;
+          cursor: pointer;
+          font-weight: 300;
+          padding: 11px 48px;
+          transition: 0.3s color;
+          color: $color-black1000;
+          @include screen-md() {
+            &:hover {
+              // by子頻
+              color: $primary-main;
+            }
+          }
+          &.active {
+            font-weight: 500;
+            position: relative;
+            &::after {
+              content: '';
+              width: 3px;
+              height: 100%;
+              // by子頻
+              background-color: $primary-main;
+              right: -1px;
+              top: 0;
+              position: absolute;
+            }
+            @include screen-md() {
+              &:hover {
+                color: inherit;
+              }
+            }
+          }
+        }
+      }
+      &.withoutSub {
+        background-color: $color-black50;
+        @extend %p-normal;
+        cursor: pointer;
+        font-weight: 300;
+        padding: 11px 48px;
+        transition: 0.3s color;
+        color: #000000;
+        @include screen-md() {
+          &:hover {
+            // by子頻
+            color: $primary-main;
+          }
+        }
+        &.active {
+          font-weight: 500;
+          position: relative;
+          &::after {
+            content: '';
+            width: 3px;
+            height: 100%;
+            // by子頻
+            background-color: $primary-main;
+            right: -1px;
+            top: 0;
+            position: absolute;
+          }
+          @include screen-md() {
+            &:hover {
+              color: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
