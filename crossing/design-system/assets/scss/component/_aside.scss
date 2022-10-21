@@ -4,6 +4,8 @@ aside {
     left: 0;
     height: 100%;
     padding: 0 10px;
+    opacity: 0;
+    transition: 0.3s opacity;
     p{
       //content英文
       font-size: 12px;

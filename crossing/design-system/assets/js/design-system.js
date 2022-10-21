@@ -83,19 +83,19 @@ copyLink.forEach((element) => {
 let copyColor = document.querySelectorAll(".copyColor"); //可以加上"，"變成共用複製
 copyColor.forEach((element) => {
   element.addEventListener("click", function () {
-      var input = document.body.appendChild(document.createElement("input"));
-      input.value = element.innerHTML;
-      input.focus();
-      input.select();
-      try {
-        message("色碼已複製。"); //可以改變文案
-        return document.execCommand("copy");
-      } catch (e) {
-        console.warn("Copy to clipboard failed.", e);
-        return false;
-      } finally {
-        input.parentNode.removeChild(input);
-      }
+    var input = document.body.appendChild(document.createElement("input"));
+    input.value = element.innerHTML;
+    input.focus();
+    input.select();
+    try {
+      message("色碼已複製。"); //可以改變文案
+      return document.execCommand("copy");
+    } catch (e) {
+      console.warn("Copy to clipboard failed.", e);
+      return false;
+    } finally {
+      input.parentNode.removeChild(input);
+    }
   });
 });
 
@@ -111,31 +111,31 @@ function message(content) {
 
 function cardSetMarginBottom() {
   // ＊＊＊ special 特殊情形使用，偵測電腦版的卡片 ＊＊＊
-  //兩個的類型如果卡片數量大於2，則需要設置margin-bottom:40px 
-  //三個的類型如果卡片數量大3，則需要設置margin-bottom:40px 
-  let type1 = document.querySelectorAll('.card-group--2')
+  //兩個的類型如果卡片數量大於2，則需要設置margin-bottom:40px
+  //三個的類型如果卡片數量大3，則需要設置margin-bottom:40px
+  let type1 = document.querySelectorAll(".card-group--2");
   for (let t1 = 0; t1 < type1.length; t1++) {
     // console.log(type1[t1].children)
     if (type1[t1].children.length > 2) {
-      let u = type1[t1].children.length % 2
+      let u = type1[t1].children.length % 2;
       // console.log(u)
-      if(u == 0){
-        u = 2
+      if (u == 0) {
+        u = 2;
       }
       for (let c = 0; c < type1[t1].children.length - u; c++) {
-        type1[t1].children[c].style.marginBottom = '40px'
+        type1[t1].children[c].style.marginBottom = "40px";
       }
     }
   }
-  let type2 = document.querySelectorAll('.card-group--3')
+  let type2 = document.querySelectorAll(".card-group--3");
   for (let t2 = 0; t2 < type2.length; t2++) {
     if (type2[t2].children.length > 3) {
-      let u = type2[t2].children.length % 3
-      if(u == 0){
-        u = 3
+      let u = type2[t2].children.length % 3;
+      if (u == 0) {
+        u = 3;
       }
       for (let c = 0; c < type2[t2].children.length - u; c++) {
-        type2[t2].children[c].style.marginBottom = '40px'
+        type2[t2].children[c].style.marginBottom = "40px";
       }
     }
   }
@@ -149,13 +149,18 @@ function init() {
     body.style.overflow = "auto";
     nav.style.left = "-100%";
     dropdownSwitchP.innerHTML = "其他子頻道設計系統";
-
     // ＊＊＊ special 特殊情形使用，偵測電腦版的卡片 ＊＊＊
-    //兩個的類型如果卡片數量大於2，則需要設置margin-bottom:40px 
-    //三個的類型如果卡片數量大3，則需要設置margin-bottom:40px 
-    cardSetMarginBottom()
+    //兩個的類型如果卡片數量大於2，則需要設置margin-bottom:40px
+    //三個的類型如果卡片數量大3，則需要設置margin-bottom:40px
+    cardSetMarginBottom();
   } else {
     dropdownSwitchP.innerHTML = "其他頻道";
+  }
+  // aside 
+  if (window.innerWidth > 1000) {
+    setTimeout(() => {
+      document.querySelector("aside").style.opacity = "1";
+    }, 500);
   }
   document.querySelector(".copyright-year").innerHTML =
     new Date().getFullYear();
@@ -167,17 +172,11 @@ function imgResize() {
   for (let i = 0; i < img.length; i++) {
     if (screenWidth > 768) {
       if (img[i].hasAttribute("data-pc")) {
-        img[i].setAttribute(
-          "src",
-          `${img[i].getAttribute("data-pc")}`
-        );
+        img[i].setAttribute("src", `${img[i].getAttribute("data-pc")}`);
       }
     } else {
       if (img[i].hasAttribute("data-mb")) {
-        img[i].setAttribute(
-          "src",
-          `${img[i].getAttribute("data-mb")}`
-        );
+        img[i].setAttribute("src", `${img[i].getAttribute("data-mb")}`);
       }
     }
     // ＊＊＊ special 特殊情形使用，mb版圖片若有最小值width，須在圖片上加上data-minWidth屬性 ＊＊＊
@@ -194,7 +193,6 @@ function imgResize() {
     }
   }
 }
-
 
 document.querySelector(".hamburger").addEventListener("click", function () {
   nav.style.left = "0";
