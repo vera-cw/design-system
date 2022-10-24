@@ -45,6 +45,7 @@ nav {
       > span {
         padding: 16px 48px;
         position: relative;
+        display: block;
         &::after {
           content: url(./../images/icon-arrow.svg);
           position: absolute;

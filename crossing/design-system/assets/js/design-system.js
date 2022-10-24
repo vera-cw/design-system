@@ -22,7 +22,7 @@ navWithSub.forEach((element) => {
     }
   });
   element.addEventListener("click", function () {
-    if (this.getAttribute("class").includes("active")) {
+    if (this.classList.length) {
       this.classList.remove("active");
       this.nextElementSibling.classList.add("d-none");
     } else {
@@ -156,7 +156,7 @@ function init() {
   } else {
     dropdownSwitchP.innerHTML = "其他頻道";
   }
-  // aside 
+  // aside 出現
   if (window.innerWidth > 1000) {
     setTimeout(() => {
       document.querySelector("aside").style.opacity = "1";
