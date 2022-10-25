@@ -204,7 +204,7 @@ main {
     > div {
       max-width: calc(100vw - 48px);
       @include screen-md() {
-        max-width: initial;
+        max-width: 1000px;
       }
       &:last-child() {
         margin-bottom: 0;
@@ -369,12 +369,14 @@ a {
     // ＊＊＊ 特殊情況：圖片超過一屏，需要讓他多包一層div
     > div {
       padding-left: 24px;
-      max-width: calc(100vw + 48px) !important;
       width: calc(100vw + 0px);
       overflow: hidden;
       overflow: auto;
       margin-left: -24px;
       position: relative;
+      @include screen-md-max{
+        max-width: calc(100vw + 48px) !important;
+      }
       @include screen-sm() {
         max-width: 100%;
         width: 100%;
@@ -382,12 +384,14 @@ a {
     }
     > video {
       padding-left: 24px;
-      max-width: calc(100vw + 48px) !important;
       width: calc(100vw - 24px);
       overflow: hidden;
       overflow: auto;
       margin-left: -24px;
       position: relative;
+      @include screen-md-max{
+        max-width: calc(100vw + 48px) !important;
+      }
       @include screen-sm() {
         max-width: 100%;
         width: 100%;
@@ -538,7 +542,9 @@ a {
 
     &--2 {
       margin: 0;
-      max-width: calc(100vw - 16px) !important;
+      @include screen-md-max{
+        max-width: calc(100vw - 16px) !important;
+      }
       @include screen-md() {
         max-width: unset;
         margin: 0 -16px;

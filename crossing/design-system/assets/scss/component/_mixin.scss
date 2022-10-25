@@ -28,3 +28,16 @@
     }
   }
   
+
+  // 例外：用max
+  @mixin screen-sm-max {
+    @media (max-width: 500px) {
+      @content;
+    }
+  }
+
+  @mixin screen-md-max {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
