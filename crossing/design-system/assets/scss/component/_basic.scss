@@ -88,16 +88,16 @@ main {
   position: relative;
   @include screen-md() {
     overflow-x: initial;
-  }
-  &::before {
-    content: '';
-    width: 1px;
-    height: 100%;
-    background-color: $color-black100;
-    position: absolute;
-    left: 281px;
-    top: 0;
-    z-index: 0;
+    &::before {
+      content: '';
+      width: 1px;
+      height: 100%;
+      background-color: $color-black100;
+      position: absolute;
+      left: 281px;
+      top: 0;
+      z-index: 0;
+    }
   }
 }
 
