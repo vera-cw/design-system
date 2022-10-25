@@ -39,7 +39,6 @@ html {
 }
 
 // ::todo 整理字體大小
-
 %p-small {
   font-size: 14px;
   line-height: 23.8px;
@@ -86,8 +85,19 @@ html {
 
 main {
   overflow-x: hidden;
+  position: relative;
   @include screen-md() {
     overflow-x: initial;
+  }
+  &::before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: $color-black100;
+    position: absolute;
+    left: 281px;
+    top: 0;
+    z-index: 0;
   }
 }
 
@@ -97,16 +107,7 @@ main {
   @include screen-md() {
     margin-left: 0px;
     padding: 0 64px 10rem;
-    &::before {
-      content: '';
-      width: 1px;
-      height: 100%;
-      background-color: $color-black100;
-      position: absolute;
-      left: 0px;
-      top: 0;
-      z-index: 0;
-    }
+    min-height: calc(100vh - 197px);
   }
   .pageHeader {
     padding: 40px 0;
