@@ -194,10 +194,10 @@
             </div>
 
             <!-- 右邊選單(1000px以上才有) -->
-            <!-- 此處不顯示，但不能刪除只能隱藏，不然會有js錯誤 -->
-            <aside class="d-none col-lg-2">
-              <p>CONTENT</p>
-              <ul>
+            <!-- 此處如果不顯示，不能刪除只能隱藏，不然會有js錯誤，也不能在aside上面寫opacity，因為js會給他1 -->
+            <aside class="d-none col-lg-2 d-lg-block">
+              <p class="opacity-0">CONTENT</p>
+              <ul class="opacity-0">
                 <li class="active"><a href="#icon">主要識別字體</a></li>
               </ul>
             </aside>
