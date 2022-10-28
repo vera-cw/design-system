@@ -115,11 +115,16 @@ main {
 .wrapper {
   position: relative;
   padding: 0 24px 7rem;
+  max-width: 1128px;
 
   @include screen-md() {
     margin-left: 0px;
     padding: 0 64px 10rem;
     min-height: calc(100vh - 197px);
+  }
+
+  @include screen-xxl {
+    width: 1128px;
   }
 
   .pageHeader {
@@ -226,7 +231,7 @@ main {
       max-width: calc(100vw - 48px);
 
       @include screen-md() {
-        max-width: 1000px;
+        max-width: initial;
       }
 
       &:last-child() {
@@ -311,6 +316,12 @@ a {
 
   &-right {
     text-align: right;
+  }
+}
+
+.opacity {
+  &-0 {
+    opacity: 0;
   }
 }
 
