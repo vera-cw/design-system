@@ -23,7 +23,6 @@ nav {
     top: 20px;
     display: flex;
     background: #fff;
-    font-weight: 300;
     padding-left: 8px;
     @include screen-md() {
       display: none;
@@ -33,7 +32,7 @@ nav {
     width: 280px;
     > li {
       @extend %p-small;
-      font-weight: 400;
+
       position: relative;
       cursor: pointer;
       color: $color-black500;
@@ -61,7 +60,7 @@ nav {
         > li {
           @extend %p-normal;
           cursor: pointer;
-          font-weight: 300;
+    
           padding: 11px 48px;
           transition: 0.3s color;
           color: $color-black1000;
@@ -72,7 +71,7 @@ nav {
             }
           }
           &.active {
-            font-weight: 500;
+            font-weight: $font-weight-500;
             position: relative;
             &::after {
               content: '';
@@ -96,7 +95,7 @@ nav {
         background-color: $color-black50;
         @extend %p-normal;
         cursor: pointer;
-        font-weight: 300;
+  
         padding: 11px 48px;
         transition: 0.3s color;
         color: #000000;
@@ -107,7 +106,7 @@ nav {
           }
         }
         &.active {
-          font-weight: 500;
+          font-weight: $font-weight-500;
           position: relative;
           &::after {
             content: '';

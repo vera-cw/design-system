@@ -10,6 +10,7 @@
 html {
   scroll-behavior: smooth;
   background-color: $color-black0;
+  font-weight: $font-weight-300;
 }
 
 .pc {
@@ -131,7 +132,7 @@ main {
       font-size: 1rem;
       line-height: 1.5;
       color: $color-black500;
-      font-weight: $font-weight-400;
+
       letter-spacing: 0.02rem;
 
       a {
@@ -150,7 +151,7 @@ main {
       font-size: 1rem;
       line-height: 1.5;
       color: $color-black500;
-      font-weight: $font-weight-400;
+
       letter-spacing: 0.02rem;
       margin: $spacing-1 0;
 
@@ -170,7 +171,7 @@ main {
       font-size: 1rem;
       line-height: 1.5;
       color: $color-black1000;
-      font-weight: $font-weight-400;
+
       letter-spacing: 0.02rem;
       margin: $spacing-1 0;
 
@@ -190,7 +191,7 @@ main {
       font-size: 1rem;
       line-height: 1.5;
       color: $color-black1000;
-      font-weight: $font-weight-400;
+
       letter-spacing: 0.02rem;
       margin: $spacing-1 0;
 
@@ -367,7 +368,7 @@ a {
     border-bottom: 1px solid #eee;
     margin-bottom: 12px;
     padding-bottom: 8px;
-    font-weight: 500;
+    font-weight: $font-weight-500;
 
     p {
       @extend %p-title;
@@ -380,7 +381,7 @@ a {
       &.do {
         display: inline-flex;
         align-items: center;
-        font-weight: 400;
+
 
         img {
           width: 18px;
@@ -491,7 +492,7 @@ a {
 
       strong {
         color: #d60c18;
-        font-weight: 400;
+
       }
 
       // *** special ***
@@ -525,7 +526,7 @@ a {
         font-size: $font-size-14;
         line-height: 1.5;
         color: $color-black1000;
-        font-weight: $font-weight-400;
+
         letter-spacing: 0.02rem;
         padding-left: 25px;
 
@@ -544,7 +545,7 @@ a {
     >p {
       @extend %p-title;
       margin-bottom: 0px;
-      font-weight: 700;
+      font-weight: $font-weight-700;
     }
 
     >ul {
@@ -701,7 +702,7 @@ a {
     li {
       font-family: $font-family-sans;
       display: inline-flex;
-      font-weight: 300;
+
       width: 100%;
       letter-spacing: 0.02rem;
       line-height: 25.6px;
@@ -724,7 +725,7 @@ a {
     border-bottom: 1px solid #eee;
     margin-bottom: 12px;
     padding-bottom: 8px;
-    font-weight: 500;
+    font-weight: $font-weight-500;
 
     p {
       @extend %p-title;
@@ -794,7 +795,7 @@ a {
         th {
           display: inline-flex;
           vertical-align: middle;
-          font-weight: 700;
+          font-weight: $font-weight-700;
           width: 100%;
 
           .square {
@@ -866,7 +867,7 @@ a {
     font-size: $font-size-16;
     line-height: 1.5;
     color: $color-black1000;
-    font-weight: $font-weight-400;
+
     letter-spacing: 0.02rem;
     padding-left: 30px;
     transition: 0.3s;

@@ -59,7 +59,6 @@ header {
       display: block;
       padding: 8px 16px;
       @extend %p-small;
-      font-weight: 400;
       transition: 0.3s;
       &:hover {
         color: $primary-main;
@@ -67,7 +66,6 @@ header {
     }
     span {
       white-space: nowrap;
-      font-weight: 400;
       @extend %p-small;
       display: flex;
       align-items: center;
