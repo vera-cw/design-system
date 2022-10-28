@@ -110,6 +110,12 @@ main {
       z-index: 0;
     }
   }
+
+  >div>div {
+    @include screen-xxl {
+      min-width: 1450px;
+    }
+  }
 }
 
 .wrapper {
