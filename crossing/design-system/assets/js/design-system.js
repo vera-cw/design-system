@@ -67,7 +67,7 @@ copyLink.forEach((element) => {
       input.focus();
       input.select();
       try {
-        message("連結已複製。"); //可以改變文案
+        message("連結已複製"); //可以改變文案
         return document.execCommand("copy");
       } catch (e) {
         console.warn("Copy to clipboard failed.", e);
@@ -88,7 +88,7 @@ copyColor.forEach((element) => {
     input.focus();
     input.select();
     try {
-      message("色碼已複製。"); //可以改變文案
+      message("色碼已複製"); //可以改變文案
       return document.execCommand("copy");
     } catch (e) {
       console.warn("Copy to clipboard failed.", e);
@@ -106,7 +106,7 @@ function message(content) {
   }, 100);
   setTimeout(function () {
     msg.classList.remove("active");
-  }, 1000);
+  }, 3000);
 }
 
 function cardSetMarginBottom() {
