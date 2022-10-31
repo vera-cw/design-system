@@ -16,6 +16,12 @@ header {
       @extend %p-small;
       color: $color-black800;
     }
+    a{
+      transition: 0.3s;
+      &:hover {
+        color: $primary-main;
+      }
+    }
     &-container {
       width: 90px;
       display: block;
