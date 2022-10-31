@@ -506,14 +506,14 @@ a {
       font-size: $font-size-16;
       line-height: 25.6px;
       align-items: center;
-      margin: 8px 0px;
+      margin: $spacing-1 0px;
       padding-left: 12px;
       border-left: 3px solid #cfcfcf;
       letter-spacing: 0.02rem;
 
       strong {
         color: #d60c18;
-
+        font-weight: 300;
       }
 
       // *** special ***
@@ -521,7 +521,7 @@ a {
       //<div class="card-content m-special-1">
       &.m-special-1 {
         margin-left: -16px;
-        padding: 0 24px 0 16px;
+        padding: 0 $spacing-3 0 $spacing-2;
 
         @include screen-sm() {
           margin-left: -0px;

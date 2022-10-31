@@ -4,9 +4,10 @@ header {
   top: 0;
   left: 0;
   background-color: $color-black0;
-  padding: 12px 16px;
+  padding: 12px 4px;
   @include screen-sm() {
-    padding: 16px 48px;
+    z-index: 1;
+    padding: $spacing-1 $spacing-6;
   }
   .logo {
     padding: 0;
@@ -16,11 +17,10 @@ header {
       color: $color-black800;
     }
     &-container {
-      width: 120px;
-      min-width: 100px;
+      width: 90px;
       display: block;
       @include screen-sm() {
-        min-width: 120px;
+        width: 120px;
       }
     }
     img {
@@ -32,12 +32,12 @@ header {
   }
   .dropdown {
     background-color: $color-black0;
-    cursor: pointer;
     padding: 0;
     > div {
       display: inline-block;
       position: relative;
       min-width: 100px;
+      cursor: pointer;
       @include screen-sm() {
         min-width: 120px;
       }
