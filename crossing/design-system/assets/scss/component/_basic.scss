@@ -112,10 +112,10 @@ main {
   }
 
   // *** special ***
-  // 超過1600px尺寸，須設定最小寬度1450px
+  // 超過1600px尺寸，須設定最小寬度1354px
   >div>div {
     @include screen-xxl {
-      min-width: 1350px;
+      min-width: 1354px;
     }
   }
 }
@@ -123,7 +123,7 @@ main {
 .wrapper {
   position: relative;
   padding: 0 24px 7rem;
-  max-width: 1124px;
+  max-width: 1128px;
   font-weight: 400;
 
   @include screen-md() {
@@ -136,7 +136,7 @@ main {
   // *** special ***
   // 超過1600px尺寸，須設定寬度固定為1125
   @include screen-xxl {
-    width: 1124px;
+    width: 1128px;
   }
 
   .pageHeader {
@@ -368,7 +368,7 @@ a {
     max-width: calc(100vw - 16px);
 
     @include screen-sm() {
-      max-width: 1000px;
+      max-width: 1000px !important
     }
   }
 }
