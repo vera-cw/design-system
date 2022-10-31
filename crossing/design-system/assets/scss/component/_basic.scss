@@ -124,6 +124,7 @@ main {
   position: relative;
   padding: 0 24px 7rem;
   max-width: 1124px;
+  font-weight: 400;
 
   @include screen-md() {
     margin-left: 0px;
@@ -364,6 +365,7 @@ a {
 .max-width {
   &-1000 {
     max-width: calc(100vw - 16px);
+
     @include screen-sm() {
       max-width: 1000px;
     }
@@ -769,6 +771,7 @@ a {
       width: initial;
       margin-left: 0;
       padding-left: 0;
+      width: 100%;
     }
 
     table {
