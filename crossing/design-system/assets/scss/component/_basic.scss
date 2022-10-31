@@ -515,7 +515,10 @@ a {
 
       strong {
         color: #d60c18;
-        font-weight: 300;
+        font-weight: 400;
+        @include screen-sm() {
+          font-weight: 300;
+        }
       }
 
       // *** special ***
