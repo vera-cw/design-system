@@ -127,6 +127,7 @@ main {
   font-weight: 400;
 
   @include screen-md() {
+    font-weight: 300;
     margin-left: 0px;
     padding: 0 64px 10rem;
     min-height: calc(100vh - 197px);
