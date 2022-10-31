@@ -925,16 +925,16 @@ a {
 
     li {
       margin: 8px 8px;
-      width: calc(16.333333333333% - 16px);
+      width: calc(20% - 16px);
 
       @include screen-sm() {
         margin: 8px 8px;
-        width: calc(12.5% - 16px);
+        width: calc(20% - 16px);
       }
 
       @include screen-xl() {
         margin: 8px 16px;
-        width: calc(8.333333333333% - 32px);
+        width: calc(10% - 32px);
       }
 
       img {
