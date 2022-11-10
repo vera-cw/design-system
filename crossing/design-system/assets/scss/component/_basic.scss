@@ -122,7 +122,7 @@ main {
 
 .wrapper {
   position: relative;
-  padding: 0 24px 7rem;
+  padding: 0 $spacing-5 7rem;
   max-width: 1128px;
   font-weight: 400;
 
@@ -140,7 +140,7 @@ main {
   }
 
   .pageHeader {
-    padding: 40px 0;
+    padding: $spacing-7 0;
     border-bottom: 1px solid $color-black100;
   }
 
@@ -170,7 +170,7 @@ main {
       color: $color-black500;
 
       letter-spacing: 0.02rem;
-      margin: $spacing-1 0;
+      margin: $spacing-2 0;
 
       a {
         color: $color-black500;
@@ -190,7 +190,7 @@ main {
       color: $color-black1000;
 
       letter-spacing: 0.02rem;
-      margin: $spacing-1 0;
+      margin: $spacing-2 0;
 
       a {
         color: $color-black1000;
@@ -210,7 +210,7 @@ main {
       color: $color-black1000;
 
       letter-spacing: 0.02rem;
-      margin: $spacing-1 0;
+      margin: $spacing-2 0;
 
       a {
         color: $color-black1000;
@@ -226,7 +226,7 @@ main {
   }
 
   section {
-    padding: 40px 0;
+    padding: $spacing-7 0;
     position: relative;
 
     >a {
@@ -241,10 +241,6 @@ main {
 
     >div {
       max-width: calc(100vw - 48px);
-
-      @include screen-md() {
-        // max-width: initial;
-      }
 
       &:last-child() {
         margin-bottom: 0;
@@ -269,7 +265,7 @@ main {
     }
 
     .title {
-      margin-bottom: $spacing-5;
+      margin-bottom: $spacing-7;
 
       h2 {
         display: flex;
@@ -379,7 +375,7 @@ a {
 .card {
   // 卡片本身樣式
   position: relative;
-  margin-bottom: $spacing-4;
+  margin-bottom: $spacing-6;
 
   @include screen-md() {
     margin-bottom: 0px;
@@ -389,15 +385,15 @@ a {
   &-title {
     width: 100%;
     border-bottom: 1px solid #eee;
-    margin-bottom: 12px;
-    padding-bottom: 8px;
+    margin-bottom: $spacing-3;
+    padding-bottom: $spacing-2;
     font-weight: $font-weight-500;
 
     p {
       @extend %p-title;
       display: inline-flex;
       align-items: center;
-      margin-right: 8px;
+      margin-right: $spacing-2;
 
       // do/dont
       &.dont,
@@ -409,7 +405,7 @@ a {
         img {
           width: 18px;
           height: 18px;
-          margin-right: 8px;
+          margin-right: $spacing-2;
         }
       }
 
@@ -425,7 +421,7 @@ a {
 
   // 圖片
   &-body {
-    margin-bottom: 8px;
+    margin-bottom: $spacing-2;
 
     // ＊＊＊ 特殊情況：圖片超過一屏，需要讓他多包一層div
     >div {
@@ -447,7 +443,7 @@ a {
     }
 
     video {
-      padding-left: 24px;
+      padding-left: $spacing-5;
       width: calc(100vw - 24px);
       overflow: hidden;
       overflow: auto;
@@ -486,12 +482,12 @@ a {
       line-height: 12px;
       display: inline-flex;
       align-items: center;
-      margin-right: 8px;
+      margin-right: $spacing-2;
 
       img {
         width: 18px;
         height: 18px;
-        margin-right: 8px;
+        margin-right: $spacing-2;
       }
     }
 
@@ -508,8 +504,8 @@ a {
       font-size: $font-size-16;
       line-height: 25.6px;
       align-items: center;
-      margin: $spacing-1 0px;
-      padding-left: 12px;
+      margin: $spacing-2 0px;
+      padding-left: $spacing-3;
       border-left: 3px solid #cfcfcf;
       letter-spacing: 0.02rem;
 
@@ -526,7 +522,7 @@ a {
       //<div class="card-content m-special-1">
       &.m-special-1 {
         margin-left: -16px;
-        padding: 0 $spacing-3 0 $spacing-2;
+        padding: 0 $spacing-5 0 $spacing-4;
 
         @include screen-sm() {
           margin-left: -0px;
@@ -547,7 +543,7 @@ a {
       }
 
       li {
-        margin-top: 8px;
+        margin-top: $spacing-2;
         position: relative;
         font-size: $font-size-14;
         line-height: 1.5;
@@ -585,11 +581,11 @@ a {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        margin: $spacing-1 0;
+        margin: $spacing-2 0;
         @extend %p-normal;
 
         >img {
-          margin-right: 16px;
+          margin-right: $spacing-4;
         }
       }
     }
@@ -602,7 +598,7 @@ a {
 
       @include screen-md() {
         .card:nth-child(2) {
-          padding: 40px 16px;
+          padding: $spacing-7 $spacing-4;
         }
       }
 
@@ -610,15 +606,15 @@ a {
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        margin: 16px;
+        margin: $spacing-4;
       }
     }
 
     &--1 {
-      margin-bottom: $spacing-5;
+      margin-bottom: $spacing-7;
 
       @include screen-md() {
-        margin-bottom: $spacing-5;
+        margin-bottom: $spacing-7;
       }
 
       >.card {
@@ -637,7 +633,7 @@ a {
       @include screen-md() {
         max-width: unset;
         margin: 0 -16px;
-        margin-bottom: $spacing-5;
+        margin-bottom: $spacing-7;
       }
 
       >.card {
@@ -645,17 +641,17 @@ a {
         padding: 0;
 
         @include screen-md() {
-          padding: 0 16px;
+          padding: 0 $spacing-4;
           width: 50%;
         }
       }
 
       // 手機版的最後一個margin-bottom設定為40px，其餘的為32px
       .card:last-child {
-        margin-bottom: 40px;
+        margin-bottom: $spacing-7;
 
         @include screen-md() {
-          margin-bottom: 0px;
+          margin-bottom: 0;
         }
       }
 
@@ -666,12 +662,12 @@ a {
         margin: 0 -16px;
 
         @include screen-md() {
-          margin-bottom: $spacing-5;
+          margin-bottom: $spacing-7;
         }
 
         >div {
           width: 50%;
-          padding: 0 16px;
+          padding: 0 $spacing-4;
         }
       }
     }
@@ -683,12 +679,12 @@ a {
       @include screen-md() {
         max-width: unset;
         margin: 0 -16px;
-        margin-bottom: $spacing-5;
+        margin-bottom: $spacing-7;
       }
 
       >.card {
         width: 50%;
-        padding: 0 16px;
+        padding: 0 $spacing-4;
 
         @include screen-md() {
           padding: 0 16px;
@@ -698,7 +694,7 @@ a {
 
       // 手機版的最後一個margin-bottom設定為40px，其餘的為32px
       .card:last-child {
-        margin-bottom: 40px;
+        margin-bottom: $spacing-7;
 
         @include screen-md() {
           margin-bottom: 0px;
@@ -712,13 +708,13 @@ a {
 // 自定義表格樣式
 // ----------------------------
 .table {
-  margin-bottom: $spacing-5;
+  margin-bottom: $spacing-7;
 
   .block {
     width: 100%;
     color: #fff;
     display: flex;
-    margin-bottom: 16px;
+    margin-bottom: $spacing-4;
     flex-wrap: wrap;
 
     @include screen-md() {
@@ -735,12 +731,12 @@ a {
       font-size: 16px;
       flex-grow: 1;
       flex-shrink: 1;
-      padding: 16px 0 16px 0px;
+      padding: $spacing-4 0 $spacing-4 0;
       justify-content: space-around;
 
       // *** 如果數量多於五個，須在li上面加上此class ***
       &.lessThanFive {
-        padding: 16px 24px;
+        padding: $spacing-4 $spacing-5;
         justify-content: flex-start;
       }
     }
@@ -749,15 +745,15 @@ a {
   &-title {
     width: 100%;
     border-bottom: 1px solid #eee;
-    margin-bottom: 12px;
-    padding-bottom: 8px;
+    margin-bottom: $spacing-3;
+    padding-bottom: $spacing-2;
     font-weight: $font-weight-500;
 
     p {
       @extend %p-title;
       display: inline-flex;
       align-items: center;
-      margin-right: 8px;
+      margin-right: $spacing-2;
     }
   }
 
@@ -767,7 +763,7 @@ a {
     overflow-x: auto;
     min-width: 100vw;
     margin-left: -24px;
-    padding-left: 24px;
+    padding-left: $spacing-5;
 
     @include screen-md() {
       min-width: initial;
@@ -780,7 +776,7 @@ a {
     table {
       min-width: 100%;
       width: 100%;
-      margin-bottom: 8px;
+      margin-bottom: $spacing-2;
 
       @include screen-md() {
         table-layout: fixed;
@@ -827,7 +823,7 @@ a {
           .square {
             width: 24px;
             height: 24px;
-            margin-right: 8px;
+            margin-right: $spacing-2;
             display: inline-flex;
             vertical-align: middle;
           }
@@ -857,7 +853,7 @@ a {
   border: 1px solid #e1e1e1;
   border-radius: 4px;
   width: 100%;
-  margin-bottom: $spacing-5;
+  margin-bottom: $spacing-7;
 
   &:hover {
     p {
@@ -913,7 +909,7 @@ a {
 // 自定義icon樣式
 // ----------------------------
 .icon {
-  margin-bottom: $spacing-5;
+  margin-bottom: $spacing-7;
 
   ul {
     display: flex;
@@ -930,16 +926,16 @@ a {
     }
 
     li {
-      margin: 8px 8px;
+      margin: $spacing-2 $spacing-2;
       width: calc(20% - 16px);
 
       @include screen-sm() {
-        margin: 8px 8px;
+        margin: $spacing-2 $spacing-2;
         width: calc(20% - 16px);
       }
 
       @include screen-xl() {
-        margin: 8px 16px;
+        margin: $spacing-2 $spacing-4;
         width: calc(10% - 32px);
       }
 

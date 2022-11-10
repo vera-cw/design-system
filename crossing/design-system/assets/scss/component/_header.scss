@@ -7,7 +7,7 @@ header {
   padding: 12px 4px;
   @include screen-sm() {
     z-index: 2;
-    padding: $spacing-1 $spacing-6;
+    padding: $spacing-1 $spacing-8;
   }
   .logo {
     padding: 0;
