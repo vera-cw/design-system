@@ -3,7 +3,7 @@
         {
           "extensionName": ".css", 
           "format": "compressed",
-          "savePath": "./crossing/design-system/assets/css/"
+          "savePath": "./design-system/assets/css/"
         }
       ],
 }
