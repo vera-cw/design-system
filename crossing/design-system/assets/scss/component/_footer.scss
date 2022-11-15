@@ -24,8 +24,8 @@ footer {
       @extend %p-footer;
     }
     a {
-      color: $color-black1000;
-      border-bottom: 1px solid $color-black1000;
+      color: #003a9f;
+      border-bottom: 1px solid #003a9f;
       transition: 0.3s;
       &:hover{
         border-bottom: 1px solid $primary-main;

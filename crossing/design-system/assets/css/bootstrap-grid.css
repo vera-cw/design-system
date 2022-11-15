@@ -785,6 +785,10 @@
   margin-bottom: auto !important;
 }
 
+.mt-10 {
+  margin-top: 0.625rem!important;
+}
+
 .p-0 {
   padding: 0 !important;
 }
