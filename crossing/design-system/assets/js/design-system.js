@@ -4,7 +4,7 @@ let msg = document.querySelector(".msg");
 let nav = document.querySelector("nav");
 let black = document.querySelector(".black");
 let body = document.querySelector("body");
-let dropdownSwitchP = document.querySelector(".dropdown-switch p");
+// let dropdownSwitchP = document.querySelector(".dropdown-switch p");
 let pageHeader = document.querySelector(".pageHeader");
 let aside = document.querySelector("aside");
 
@@ -43,16 +43,16 @@ navWithoutSub.forEach((element) => {
 });
 
 //換頻道選單
-let dropdownSwitch = document.querySelector(".dropdown-switch");
-dropdownSwitch.addEventListener("click", function () {
-  if (this.getAttribute("class").includes("active")) {
-    this.classList.remove("active");
-    this.nextElementSibling.classList.remove("active");
-  } else {
-    this.classList.add("active");
-    this.nextElementSibling.classList.add("active");
-  }
-});
+// let dropdownSwitch = document.querySelector(".dropdown-switch");
+// dropdownSwitch.addEventListener("click", function () {
+//   if (this.getAttribute("class").includes("active")) {
+//     this.classList.remove("active");
+//     this.nextElementSibling.classList.remove("active");
+//   } else {
+//     this.classList.add("active");
+//     this.nextElementSibling.classList.add("active");
+//   }
+// });
 
 // 每一頁 copy link
 let copyLink = document.querySelectorAll(".copyLink"); //可以加上"，"變成共用複製
@@ -148,13 +148,13 @@ function init() {
     black.style.width = "0%";
     body.style.overflow = "auto";
     nav.style.left = "-100%";
-    dropdownSwitchP.innerHTML = "其他子頻道設計系統";
+    // dropdownSwitchP.innerHTML = "其他子頻道設計系統";
     // ＊＊＊ special 特殊情形使用，偵測電腦版的卡片 ＊＊＊
     //兩個的類型如果卡片數量大於2，則需要設置margin-bottom:40px
     //三個的類型如果卡片數量大3，則需要設置margin-bottom:40px
     cardSetMarginBottom();
   } else {
-    dropdownSwitchP.innerHTML = "其他頻道";
+    // dropdownSwitchP.innerHTML = "其他頻道";
   }
   // aside 出現
   if (window.innerWidth > 1000) {
